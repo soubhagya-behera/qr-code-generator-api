@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <title>QR Code Generator & Scanner</title>
 
-<div class="container">
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-    <h1>⚡ QR Code Generator</h1>
+  <body>
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
 
-    <p>Create QR codes instantly from text or URLs</p>
+    <div class="main-container">
+      <div class="panel">
+        <h1>⚡ QR Generator</h1>
 
-    <input
-        type="text"
-        id="textInput"
-        placeholder="Enter URL, text, email, phone number...">
+        <p>Generate QR from text or URL</p>
 
-      
+        <input type="text" id="textInput" placeholder="Enter URL, Text, Email or Phone" />
 
-    <button onclick="generateQR()">
-        🚀 Generate QR Code
-    </button>
+        <button onclick="generateQR()">🚀 Generate QR</button>
 
-    <div id="result">
+        <div id="result">
+          <img id="qrImage" alt="QR Code" />
 
-        <img id="qrImage" alt="QR Code">
+          <div class="button-group">
+            <a id="downloadBtn" download="qrcode.png"> 📥 Download </a>
 
-        <div class="button-group">
+            <button onclick="clearQR()">🗑 Clear</button>
+          </div>
+        </div>
+      </div>
 
-    <a
-            id="downloadBtn"
-            download="qrcode.png">
-        📥 Download QR
-    </a>
+      <div class="panel">
+        <h1>🔍 QR Scanner</h1>
 
-    <button onclick="clearQR()">
-        🗑 Clear
-    </button>
+        <p>Upload a QR image</p>
 
-</div>
+        <input type="file" id="qrFile" />
 
+        <button onclick="scanQR()">Scan QR</button>
+
+        <div id="scanResult">
+          <h3>Scan Result</h3>
+
+          <p id="qrType"></p>
+
+          <p id="qrContent"></p>
+
+          <div class="scan-buttons">
+            <button onclick="copyContent()">📋 Copy Content</button>
+
+            <a id="openLink" target="_blank" style="display: none">
+              🌐 Open Link
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <p class="footer">
-    Built with Java, Spring Boot & ZXing
-</p>
+    <div id="toast"></div>
 
-</div>
-
-
-<script src="/js/script.js"></script>
-
-</body>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
