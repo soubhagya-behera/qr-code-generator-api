@@ -130,9 +130,11 @@ http://localhost:8080
 
 Java Full Stack Developer
 
-GitHub: https://github.com/soubhagya-behera
-LinkedIn: https://www.linkedin.com/in/soubhagyakumar-java
-Portfolio: https://soubhagya-portfolio-olive.vercel.app
+* GitHub: https://github.com/soubhagya-behera
+
+* LinkedIn: https://www.linkedin.com/in/soubhagyakumar-java
+
+* Portfolio: https://soubhagya-portfolio-olive.vercel.app
 
 ---
 
