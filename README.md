@@ -1,167 +1,139 @@
 # ⚡ QR Code Generator & Scanner
 
-A modern full-stack web application built with **Java, Spring Boot, Thymeleaf, ZXing, HTML, CSS, and JavaScript** that allows users to generate QR codes instantly and scan existing QR codes to extract their content.
+A modern web application built using **Java, Spring Boot, Thymeleaf, ZXing, HTML, CSS, and JavaScript** that allows users to generate QR codes instantly and scan QR images to extract their content.
 
 ---
 
 ## 🚀 Features
 
-### 🔳 QR Code Generator
+### QR Generator
+- Generate QR Codes from Text or URLs
+- Download QR Codes as PNG
+- Enter Key Support
+- Instant QR Generation
 
-* Generate QR codes from:
+### QR Scanner
+- Upload and Scan QR Images
+- Automatic Content Detection
+  - URL
+  - Email
+  - Phone Number
+  - Text
+- Copy Scanned Content
+- Open Scanned URLs Directly
 
-  * URLs
-  * Plain Text
-  * Email Addresses
-  * Phone Numbers
-* Instant QR preview
-* Download generated QR as PNG
-* One-click clear functionality
-
-### 🔍 QR Code Scanner
-
-* Upload QR code images
-* Decode QR content instantly
-* Detect content type automatically:
-
-  * URL
-  * Email
-  * Phone Number
-  * Text
-* Copy scanned content to clipboard
-* Open detected URLs directly in a new tab
-
-### 🎨 Modern UI/UX
-
-* Glassmorphism design
-* Animated gradient background
-* Floating glow effects
-* Responsive mobile layout
-* Interactive hover animations
-* Custom toast notifications
+### UI / UX
+- Premium Glassmorphism Design
+- Animated Background Effects
+- Toast Notifications
+- Responsive Mobile Layout
+- Smooth Hover Animations
+- Modern Gradient UI
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 ### Backend
-
-* Java 17
-* Spring Boot
-* Thymeleaf
-* ZXing (QR Generation & Decoding)
+- Java 17
+- Spring Boot
+- ZXing
 
 ### Frontend
-
-* HTML5
-* CSS3
-* JavaScript
+- HTML5
+- CSS3
+- JavaScript
+- Thymeleaf
 
 ### Build Tool
-
-* Maven
+- Maven
 
 ---
 
 ## 📸 Screenshots
 
 ### QR Generator
-
-Add screenshot here
+![QR Generator](screenshots/QR-Generator.png)
 
 ### QR Scanner
-
-Add screenshot here
+![QR Scanner](screenshots/QR-Scanner.png)
 
 ### Mobile View
-
-Add screenshot here
+![Mobile View](screenshots/QR-Mobile-View.png)
 
 ---
 
 ## 📂 Project Structure
 
-src
-├── main
-│ ├── java
-│ │ ├── controller
-│ │ ├── service
-│ │ └── model
-│ ├── resources
-│ │ ├── static
-│ │ │ ├── css
-│ │ │ └── js
-│ │ └── templates
-│ └── application.properties
+```text
+QR-Code-Generator-Scanner
+│
+├── src
+│   ├── main
+│   │   ├── java
+│   │   ├── resources
+│   │   │   ├── static
+│   │   │   │   ├── css
+│   │   │   │   └── js
+│   │   │   └── templates
+│
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+└── README.md
+```
 
 ---
 
 ## ⚙️ Installation
 
-### Clone Repository
+Clone the repository:
 
-git clone https://github.com/your-username/qr-code-generator-scanner.git
+```bash
+git clone https://github.com/soubhagya-behera/QR-Code-Generator-Scanner.git
+```
 
-cd qr-code-generator-scanner
+Move into project directory:
 
-### Run Application
+```bash
+cd QR-Code-Generator-Scanner
+```
 
+Run the application:
+
+```bash
 mvn spring-boot:run
+```
 
-Application starts at:
+Open in browser:
 
+```text
 http://localhost:8080
+```
 
 ---
 
-## 💡 How It Works
 
-### QR Generation Flow
+## 🔮 Future Enhancements
 
-1. User enters text or URL
-2. Spring Boot receives request
-3. ZXing generates QR image
-4. QR is returned as PNG
-5. User can download instantly
-
-### QR Scanning Flow
-
-1. User uploads QR image
-2. Image sent to backend
-3. ZXing decodes QR
-4. Content type detected
-5. Result displayed in UI
-
----
-
-## 🌟 Highlights
-
-* Full Stack Java Project
-* Real-world Utility Application
-* File Upload Handling
-* QR Generation & Decoding
-* Responsive Design
-* Modern UI Animations
-* Clipboard Integration
-* URL Detection Logic
-
----
-
-## 📈 Future Enhancements
-
-* QR History
-* Dark / Light Theme Toggle
-* Camera-Based QR Scanning
-* QR Customization (Colors & Logos)
-* User Authentication
-* Cloud Storage Integration
+- QR Color Customization
+- Logo Embedded QR Codes
+- QR History
+- Drag & Drop Scanner
+- Bulk QR Generation
 
 ---
 
 ## 👨‍💻 Author
 
-Soubhagya
+**Soubhagya Kumar Behera**
 
 Java Full Stack Developer
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+GitHub: https://github.com/soubhagya-behera
+LinkedIn: https://www.linkedin.com/in/soubhagyakumar-java
+Portfolio: https://soubhagya-portfolio-olive.vercel.app
+
+---
+
+⭐ If you like this project, consider giving it a star.
